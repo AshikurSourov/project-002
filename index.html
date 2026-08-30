@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>স্বপ্ন সারথি যুব সংঘ</title>
+<style>
+:root{--bg:#fffaf2;--card:#fff;--ink:#29221c;--muted:#7b7064;--line:#eadfce;--warm:#8a5b32;--gold:#c89b55;--soft:#f7eddf;--green:#4e8061;--red:#b95e5e;--dark:#211a14}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,"Noto Sans Bengali","Segoe UI",sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}.hidden{display:none!important}
+.top{background:var(--dark);color:#eee3d5;text-align:center;padding:7px;font-size:11px}.nav{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--line)}.navin{max-width:1200px;margin:auto;padding:12px 18px;display:flex;align-items:center;gap:18px}.brand{display:flex;gap:10px;align-items:center;flex:1}.logo{width:43px;height:43px;border-radius:13px;background:var(--soft);display:grid;place-items:center;font-size:21px}.brand b{display:block}.brand small{color:var(--muted);font-size:10px}.links{display:flex;gap:16px;font-size:13px}.links a{text-decoration:none;color:inherit}.btn{border:0;border-radius:10px;padding:10px 15px;font-weight:800}.primary{background:var(--warm);color:#fff}.light{background:#fff;border:1px solid var(--line);color:var(--ink)}.gold{background:var(--gold);color:#241b13}.danger{background:#f2dddd;color:#8d4141}.success{background:#dceee2;color:#376248}
+.shell{max-width:1200px;margin:auto;padding:0 18px}.hero{margin-top:24px;border:1px solid var(--line);border-radius:27px;background:linear-gradient(135deg,#fff,#f7ecdd);padding:48px;display:grid;grid-template-columns:1.45fr .75fr;gap:30px}.eyebrow{font-size:11px;font-weight:900;letter-spacing:1.4px;color:var(--warm)}h1{font-size:clamp(40px,6vw,62px);line-height:1.03;margin:12px 0}.hero h1 em{color:var(--warm);font-style:normal}.hero p{color:var(--muted);line-height:1.8}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.heroCard,.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:19px;box-shadow:0 8px 28px #6b471c0d}.heroCard h3{margin:13px 0 7px}.heroCard p{font-size:13px}.stats,.grid3,.grid4{display:grid;gap:13px;margin-top:15px}.stats{grid-template-columns:repeat(4,1fr)}.grid3{grid-template-columns:repeat(3,1fr)}.grid4{grid-template-columns:repeat(4,1fr)}.stat small,.stat span{color:var(--muted)}.stat strong{font-size:27px;display:block;margin:4px 0}.section{margin-top:34px}.sectionHead{display:flex;justify-content:space-between;align-items:end;margin-bottom:13px}.sectionHead h2{margin:4px 0}.pill{display:inline-block;border-radius:99px;padding:5px 9px;font-size:10px;font-weight:900}.up{background:#e3f0e7;color:#397052}.run{background:#f9e1e1;color:#a64f4f}.event p,.notice small{color:var(--muted);font-size:13px;line-height:1.65}.meta{color:var(--muted);font-size:11px;margin:13px 0}.money{display:grid;grid-template-columns:1.1fr .9fr;gap:13px}.progress{height:9px;background:#eee8df;border-radius:99px;overflow:hidden;margin:14px 0}.progress i{display:block;height:100%;background:var(--gold)}.row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:13px}.row:last-child{border:0}.notice{padding:13px 0;border-bottom:1px solid var(--line)}.notice:last-child{border:0}.notice small{display:block;margin-top:4px}.cta{background:var(--dark);color:#fff;border-radius:22px;padding:28px;display:flex;justify-content:space-between;align-items:center;gap:20px}.cta p{color:#cfc3b5}.footer{background:var(--dark);color:#cfc3b5;margin-top:40px;padding:34px 0;font-size:12px}.footer b{color:#fff}
+.modal{position:fixed;inset:0;background:#1d170fcc;z-index:100;display:none;place-items:center;padding:15px}.box{width:min(720px,100%);max-height:94vh;overflow:auto;background:var(--bg);border-radius:20px;padding:24px;position:relative}.close{position:absolute;right:12px;top:12px;border:0;background:var(--soft);border-radius:9px;font-size:21px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:11px}label{font-size:12px;font-weight:750}label input,label textarea,label select{width:100%;display:block;margin-top:5px;padding:10px;border:1px solid var(--line);border-radius:9px;background:#fff;outline:0}.full{grid-column:1/-1}.status{font-size:12px;margin-top:9px;color:var(--warm)}
+#welcome{position:fixed;inset:0;background:#211a14cc;backdrop-filter:blur(7px);z-index:999;display:grid;place-items:center;padding:15px}.welcome{width:min(550px,100%);text-align:center;background:linear-gradient(145deg,#fffdf8,#f8eddd);border:1px solid #dfc18c;border-radius:27px;padding:38px 25px;box-shadow:0 25px 80px #0004;animation:pop .65s cubic-bezier(.18,.89,.32,1.28)}.welcomeLogo{width:78px;height:78px;margin:auto;border-radius:50%;display:grid;place-items:center;background:#fff;border:4px solid #ead2a4;font-size:40px;animation:float 2.7s ease-in-out infinite}.welcome h2{font-size:42px;color:var(--warm);margin:14px 0 6px;animation:glow 2.2s infinite}.welcome p{color:var(--muted);line-height:1.7;font-size:13px}.welcome button{margin-top:14px}@keyframes pop{from{opacity:0;transform:scale(.82) translateY(25px)}to{opacity:1;transform:none}}@keyframes float{50%{transform:translateY(-7px)}}@keyframes glow{50%{text-shadow:0 5px 24px #c89b5560}}
+#admin{display:none;min-height:100vh;background:var(--dark);color:#f7efe4}.adminTop{height:64px;border-bottom:1px solid #ffffff12;display:flex;align-items:center;justify-content:space-between;padding:0 20px}.adminLayout{max-width:1300px;margin:auto;display:grid;grid-template-columns:215px 1fr}.side{padding:16px 10px;border-right:1px solid #ffffff12;min-height:calc(100vh - 64px)}.side button{width:100%;text-align:left;border:0;background:transparent;color:#cfc3b5;padding:10px;border-radius:9px;margin:2px 0}.side button:hover,.side button.active{background:#ffffff0d;color:#fff}.adminMain{padding:25px}.adminMain h1{font-size:34px;margin:0}.muted{color:#a99b8b;font-size:12px}.adminCards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}.adminCards .ap,.panel{background:#2a221c;border:1px solid #ffffff0e;border-radius:15px;padding:17px}.ap small{color:#a99b8b}.ap b{font-size:24px;display:block;margin-top:5px}.panel{margin-top:13px}.panelHead{display:flex;justify-content:space-between;align-items:center}.panelHead h2{margin:0;font-size:19px}.panelHead span{color:#a99b8b;font-size:11px}.app{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:13px 0;border-bottom:1px solid #ffffff10}.person{display:flex;gap:10px;align-items:center}.avatar{width:42px;height:42px;border-radius:50%;background:#ead4b0;color:#593c20;display:grid;place-items:center;font-weight:900}.actionsSmall{display:flex;gap:5px}.actionsSmall button{border:0;border-radius:8px;padding:7px 9px;font-weight:800}.approve{background:#dceee2;color:#376248}.reject{background:#f2dddd;color:#8d4141}
+#advanced{display:none;position:fixed;inset:0;background:var(--dark);z-index:150;color:#f7efe4;overflow:auto}.adv{max-width:900px;margin:auto;padding:26px 20px}.setting{background:#2a221c;border:1px solid #ffffff0e;border-radius:15px;padding:18px;margin-top:12px}.settingRow{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid #ffffff10}.settingRow:last-child{border:0}.toggle{width:42px;height:23px;border:0;border-radius:99px;background:#5d544a;position:relative}.toggle:after{content:"";position:absolute;width:17px;height:17px;background:#fff;border-radius:50%;top:3px;left:3px}.toggle.on{background:var(--gold)}.toggle.on:after{left:22px}
+#toast{position:fixed;right:15px;bottom:15px;background:#211a14;color:#fff;padding:11px 15px;border-radius:10px;z-index:300;display:none;font-size:13px}
+@media(max-width:900px){.links{display:none}.hero{grid-template-columns:1fr}.stats,.adminCards{grid-template-columns:1fr 1fr}.grid3,.money{grid-template-columns:1fr 1fr}.adminLayout{grid-template-columns:1fr}.side{display:none}}
+@media(max-width:600px){.shell{padding:0 12px}.hero{padding:30px 20px}.grid3,.money{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.cta{display:block}.adminCards{grid-template-columns:1fr 1fr}.app{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+
+<div id="publicSite">
+<div class="top" style="display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap">
+      <span>✨ স্বচ্ছতা • ঐক্য • সেবা — স্বপ্ন সারথি যুব সংঘ</span>
+      <span id="firebaseStatus" style="display:inline-flex;align-items:center;gap:5px;background:#ffffff18;border:1px solid #ffffff25;border-radius:99px;padding:4px 9px;font-size:10px;font-weight:800">
+        <i id="firebaseDot" style="width:7px;height:7px;border-radius:50%;background:#c79b55;display:inline-block"></i>
+        <span id="firebaseText">Firebase Checking...</span>
+      </span>
+    </div>
+<header class="nav"><div class="navin">
+<div class="brand"><div class="logo">🏛️</div><div><b>স্বপ্ন সারথি যুব সংঘ</b><small>Digital Management System</small></div></div>
+<nav class="links"><a href="#events">Events</a><a href="#fund">Fund</a><a href="#members">Members</a><a href="#notice">Notice</a></nav>
+<button class="btn light" onclick="openReg()">👤 যোগ দিন</button><button class="btn primary" onclick="openLogin()">🔐 Login</button>
+</div></header>
+
+<main>
+<section class="hero shell"><div><span class="eyebrow">COMMUNITY • TRANSPARENCY • SERVICE</span><h1>একসাথে গড়ি,<br><em>একসাথে এগিয়ে যাই</em></h1><p>সদস্য, Fund, Events, Notices এবং সংঘের সকল কার্যক্রম—একটি আধুনিক ডিজিটাল প্ল্যাটফর্মে।</p><div class="actions"><button class="btn primary" onclick="openReg()">সংঘে যোগ দিন →</button><button class="btn light" onclick="document.getElementById('events').scrollIntoView()">Events দেখুন</button></div></div><div class="heroCard"><span class="eyebrow">WELCOME</span><h3>স্বপ্ন সারথি যুব সংঘ</h3><p>আপনার অংশগ্রহণই আমাদের শক্তি। Registration করে আমাদের কমিউনিটিতে যুক্ত হোন।</p><button class="btn gold" onclick="openReg()">Registration →</button></div></section>
+
+<section class="shell stats"><div class="card stat"><small>Total Fund</small><strong id="statFund">৳ 0</strong><span>Firebase থেকে</span></div><div class="card stat"><small>Balance</small><strong id="statBalance">৳ 0</strong><span>বর্তমান</span></div><div class="card stat"><small>Members</small><strong id="statMembers">0</strong><span>Active</span></div><div class="card stat"><small>Upcoming</small><strong id="statEvents">0</strong><span>Events</span></div></section>
+
+<section class="shell section" id="events"><div class="sectionHead"><div><span class="eyebrow">EVENTS</span><h2>চলমান ও আসন্ন আয়োজন</h2></div></div><div class="grid3" id="publicEvents"><div class="card">Events লোড হচ্ছে...</div></div></section>
+
+<section class="shell section" id="fund"><div class="sectionHead"><div><span class="eyebrow">FUND TRANSPARENCY</span><h2>Fund-এর হিসাব</h2></div></div><div class="money"><div class="card"><div style="display:flex;justify-content:space-between"><div><small>Collection</small><h2 id="fundTotal">৳ 0</h2></div><small id="fundTarget">Target ৳ 0</small></div><div class="progress"><i id="fundProgress" style="width:0"></i></div><div style="display:flex;justify-content:space-between;color:var(--muted);font-size:11px"><span id="fundPercent">0%</span><span id="fundRemain">৳ 0 remaining</span></div></div><div class="card"><div class="row"><span>Total Collection</span><b id="fundRowTotal">৳0</b></div><div class="row"><span>Total Expense</span><b id="expenseTotal">৳0</b></div><div class="row"><span>Available Balance</span><b id="balanceTotal" style="color:var(--green)">৳0</b></div></div></div></section>
+
+<section class="shell section" id="notice"><div class="sectionHead"><div><span class="eyebrow">NOTICE BOARD</span><h2>সর্বশেষ ঘোষণা</h2></div></div><div class="card" id="publicNotices">Notice লোড হচ্ছে...</div></section>
+
+<section class="shell section" id="members"><div class="sectionHead"><div><span class="eyebrow">OUR COMMUNITY</span><h2>আমাদের সদস্যরা</h2></div></div><div class="grid4"><div class="card stat"><strong id="mActive">0</strong><span>Active Members</span></div><div class="card stat"><strong>—</strong><span>Committee</span></div><div class="card stat"><strong id="mNew">0</strong><span>New Applications</span></div><div class="card stat"><strong>100%</strong><span>Digital Records</span></div></div></section>
+
+<section class="shell section"><div class="cta"><div><span class="eyebrow">JOIN OUR COMMUNITY</span><h2>সংঘের সদস্য হতে চান?</h2><p>Registration করুন। Admin approval-এর পর আপনার Member account চালু হবে।</p></div><button class="btn gold" onclick="openReg()">Registration করুন →</button></div></section>
+</main><footer class="footer"><div class="shell"><b>🏛️ স্বপ্ন সারথি যুব সংঘ</b><p>একসাথে, স্বচ্ছভাবে, সামনে এগিয়ে চলা।</p></div></footer>
+</div>
+
+<div id="welcome"><div class="welcome"><div class="welcomeLogo">🏛️</div><span class="eyebrow">স্বপ্ন সারথি যুব সংঘ</span><h2>স্বাগতম! ✨</h2><p>স্বপ্ন সারথি যুব সংঘের অফিসিয়াল ডিজিটাল প্ল্যাটফর্মে আপনাকে আন্তরিক স্বাগতম।</p><p>“স্বপ্ন দেখুন, পাশে থাকুন, একসাথে এগিয়ে চলুন।”</p><button class="btn primary" onclick="closeWelcome()">চলুন শুরু করি →</button></div></div>
+
+<div class="modal" id="regModal"><div class="box"><button class="close" onclick="closeReg()">×</button><h2>👤 সদস্য Registration</h2><p style="color:var(--muted);font-size:12px">Application Firebase-এ সংরক্ষিত হবে।</p><form id="regForm"><div class="formgrid">
+<label>পূর্ণ নাম*<input name="name" required></label><label>মোবাইল*<input name="phone" required></label><label>Email*<input name="email" type="email" required></label><label>Password*<input name="password" type="password" minlength="6" required></label><label>পেশা<input name="occupation"></label><label>জন্মতারিখ<input name="dob" type="date"></label><label class="full">ঠিকানা<textarea name="address" rows="2"></textarea></label><label class="full">কেন যোগ দিতে চান?<textarea name="reason" rows="2"></textarea></label><label class="full"><input type="checkbox" required style="width:auto;display:inline"> তথ্য সঠিক এবং Terms মেনে নিচ্ছি।</label></div><button class="btn primary" style="width:100%;margin-top:14px">Application Submit →</button><div id="regStatus" class="status"></div></form></div></div>
+
+<div class="modal" id="loginModal"><div class="box" style="width:min(430px,100%)"><button class="close" onclick="closeLogin()">×</button><h2>🔐 Login</h2><p style="color:var(--muted);font-size:12px">Member / Admin — Firebase Authentication</p><p style="color:var(--warm);font-size:11px">🌐 Login-এর জন্য Internet connection প্রয়োজন</p><form id="loginForm"><label>Email<input name="email" type="email" required></label><label style="display:block;margin-top:10px">Password<input name="password" type="password" required></label><button class="btn primary" style="width:100%;margin-top:14px">Login</button><div id="loginStatus" class="status"></div></form></div></div>
+
+<div id="admin"><div class="adminTop"><b>⚙️ Admin Control Center</b><div><button class="btn light" onclick="openAdvanced()">⚡ Advanced</button> <button class="btn light" onclick="logout()">Logout</button></div></div><div class="adminLayout"><aside class="side"><button class="active">📊 Dashboard</button><button onclick="scrollAdmin('eventPanel')">📅 Events</button><button onclick="scrollAdmin('fundPanel')">💰 Fund</button><button onclick="scrollAdmin('expensePanel')">💸 Expenses</button><button onclick="scrollAdmin('applicationPanel')">📝 Applications</button><button onclick="scrollAdmin('noticePanel')">📢 Notices</button><button onclick="scrollAdmin('memberPanel')">👥 Members</button></aside><main class="adminMain"><h1>Dashboard</h1><p class="muted" id="adminIdentity">Firebase Admin</p><div class="adminCards"><div class="ap"><small>Total Fund</small><b id="aFund">৳0</b></div><div class="ap"><small>Expense</small><b id="aExpense">৳0</b></div><div class="ap"><small>Members</small><b id="aMembers">0</b></div><div class="ap"><small>Pending</small><b id="aPending">0</b></div></div>
+
+<div class="panel" id="eventPanel"><div class="panelHead"><h2>📅 Event Management</h2><span>Add / Edit / Delete</span></div><form id="eventForm" class="formgrid" style="margin-top:15px"><input type="hidden" name="id"><label>Event Name*<input name="title" required></label><label>Status<select name="status"><option value="upcoming">Upcoming</option><option value="running">Running</option><option value="completed">Completed</option></select></label><label>Date*<input name="date" type="date" required></label><label>Time<input name="time" placeholder="4:00 PM"></label><label>Location<input name="location"></label><label>Max Participants<input name="max" type="number" min="0"></label><label class="full">Description<textarea name="description" rows="2"></textarea></label><label class="full"><input type="checkbox" name="public" checked style="width:auto;display:inline"> Public website-এ দেখাবে</label><button class="btn primary" type="submit">Save Event</button><button class="btn light" type="button" onclick="resetEvent()">Clear</button></form><div id="adminEvents" style="margin-top:14px"></div></div>
+
+<div class="panel" id="applicationPanel"><div class="panelHead"><h2>📝 Applications</h2><span>Approve / Reject</span></div><div id="applicationsList">Loading...</div></div>
+
+<div class="panel" id="fundPanel"><div class="panelHead"><h2>💰 Fund</h2><span>Collection entries</span></div><form id="fundForm" class="formgrid" style="margin-top:14px"><label>Amount*<input name="amount" type="number" min="0" required></label><label>Source<input name="source" placeholder="Member / Donation"></label><label>Date<input name="date" type="date"></label><label><span>Public</span><select name="public"><option value="true">Yes</option><option value="false">No</option></select></label><button class="btn primary">Add Fund</button></form><div id="fundList"></div></div>
+
+<div class="panel" id="expensePanel"><div class="panelHead"><h2>💸 Expenses</h2><span>Admin only</span></div><form id="expenseForm" class="formgrid" style="margin-top:14px"><label>Amount*<input name="amount" type="number" min="0" required></label><label>Category<input name="category" placeholder="Event / Office"></label><label class="full">Description<input name="description"></label><button class="btn primary">Add Expense</button></form><div id="expenseList"></div></div>
+
+<div class="panel" id="noticePanel"><div class="panelHead"><h2>📢 Notices</h2><span>Publish instantly</span></div><form id="noticeForm" class="formgrid" style="margin-top:14px"><label>Title*<input name="title" required></label><label>Date<input name="date" type="date"></label><label class="full">Message<textarea name="message" rows="2" required></textarea></label><button class="btn primary">Publish Notice</button></form><div id="noticeList"></div></div>
+
+<div class="panel" id="memberPanel"><div class="panelHead"><h2>👥 Members</h2><span>Member records</span></div><div id="membersList">Loading...</div></div>
+</main></div></div>
+
+<div id="advanced"><div class="adminTop"><b>⚡ Advanced Admin — A–Z Control</b><button class="btn light" onclick="closeAdvanced()">← Admin</button></div><div class="adv"><p class="muted">SUPER_ADMIN account required. Advanced access is re-authenticated with your Firebase password.</p><div class="setting"><h2>⚙️ System Controls</h2><div class="settingRow"><span>Member Registration<small class="muted">Public registration</small></span><button class="toggle on" onclick="this.classList.toggle('on')"></button></div><div class="settingRow"><span>Public Fund Transparency</span><button class="toggle on" onclick="this.classList.toggle('on')"></button></div><div class="settingRow"><span>Event Registration</span><button class="toggle on" onclick="this.classList.toggle('on')"></button></div><div class="settingRow"><span>Maintenance Mode</span><button class="toggle" onclick="this.classList.toggle('on')"></button></div></div><div class="setting"><h2>🎨 Branding</h2><div class="settingRow"><span>Organization Name</span><b>স্বপ্ন সারথি যুব সংঘ</b></div><div class="settingRow"><span>Theme</span><b>White + Warm</b></div></div><div class="setting"><h2>🔐 Roles</h2><div class="settingRow"><span>SUPER_ADMIN</span><b>Full Access</b></div><div class="settingRow"><span>ADMIN</span><b>Operational</b></div><div class="settingRow"><span>FINANCE_ADMIN</span><b>Finance</b></div><div class="settingRow"><span>EVENT_MANAGER</span><b>Events</b></div><div class="settingRow"><span>MEMBER_MANAGER</span><b>Members</b></div></div></div></div>
+<div id="toast"></div>
+
+<script type="module">
+import {initializeApp} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+import {getAuth,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut,reauthenticateWithCredential,EmailAuthProvider} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+import {getFirestore,doc,getDoc,setDoc,addDoc,collection,getDocs,query,where,orderBy,updateDoc,deleteDoc,serverTimestamp} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+
+const firebaseConfig={apiKey:"AIzaSyCXp1N1P_1ibmZ58tw-m9Xwf-BjFSGGigM",authDomain:"html-37739.firebaseapp.com",projectId:"html-37739",storageBucket:"html-37739.firebasestorage.app",messagingSenderId:"787033984293",appId:"1:787033984293:web:5518a43f0339dcd04c5ecc",measurementId:"G-7TQVD40QM7"};
+const app=initializeApp(firebaseConfig),auth=getAuth(app),db=getFirestore(app);
+let currentUser=null,currentRole=null;
+
+const $=id=>document.getElementById(id);
+function money(n){return "৳"+Number(n||0).toLocaleString("en-BD")}
+function toast(t){$("toast").textContent=t;$("toast").style.display="block";setTimeout(()=>$("toast").style.display="none",2500)}
+function openReg(){$("regModal").style.display="grid"} function closeReg(){$("regModal").style.display="none";$("regStatus").textContent=""}
+function openLogin(){$("loginModal").style.display="grid"} function closeLogin(){$("loginModal").style.display="none";$("loginStatus").textContent=""}
+window.openReg=openReg;window.closeReg=closeReg;window.openLogin=openLogin;window.closeLogin=closeLogin;
+window.closeWelcome=()=>{$("welcome").remove();sessionStorage.setItem("welcomeSeen","1")};
+if(sessionStorage.getItem("welcomeSeen")==="1")$("welcome").remove();
+window.scrollAdmin=id=>$(id).scrollIntoView({behavior:"smooth"});
+
+
+function setFirebaseStatus(state, detail=""){
+  const dot=$("firebaseDot"), text=$("firebaseText");
+  if(!dot||!text)return;
+  if(state==="connected"){
+    dot.style.background="#69b27c";
+    text.textContent="Firebase Connected";
+    $("firebaseStatus").title="Firebase server connection is active";
+  }else if(state==="offline"){
+    dot.style.background="#d06a6a";
+    text.textContent="Offline";
+    $("firebaseStatus").title="Device has no Internet connection";
+  }else{
+    dot.style.background="#c79b55";
+    text.textContent="Firebase Connecting...";
+    $("firebaseStatus").title=detail||"Checking Firebase connection";
+  }
+}
+async function checkFirebaseConnection(){
+  setFirebaseStatus("checking");
+  if(!navigator.onLine){setFirebaseStatus("offline");return false}
+  try{
+    // A real Firestore read confirms that the browser/WebView can reach Firebase.
+    await getDocs(query(collection(db,"events"),where("public","==",true)));
+    setFirebaseStatus("connected");
+    return true;
+  }catch(e){
+    // If Firestore is reachable but rules/data are not ready, show a useful state.
+    if(e?.code==="permission-denied"){
+      setFirebaseStatus("connected","Firebase reached, but Firestore Rules denied this read");
+    }else{
+      setFirebaseStatus("offline",e?.message||"Firebase connection failed");
+    }
+    console.warn("Firebase connection check:",e);
+    return false;
+  }
+}
+window.addEventListener("online",checkFirebaseConnection);
+window.addEventListener("offline",()=>setFirebaseStatus("offline"));
+
+async function loadPublic(){
+  try{
+    const ev=await getDocs(query(collection(db,"events"),where("public","==",true)));
+    $("publicEvents").innerHTML="";
+    let upcoming=0;
+    ev.forEach(d=>{const e=d.data();if(e.status!=="completed")upcoming++;const div=document.createElement("article");div.className="card event";div.innerHTML=`<span class="pill ${e.status==="running"?"run":"up"}">${e.status==="running"?"🔴 RUNNING":"🟢 UPCOMING"}</span><h3>${esc(e.title||"Event")}</h3><p>${esc(e.description||"")}</p><div class="meta">📅 ${esc(e.date||"")} • 🕓 ${esc(e.time||"")} • 📍 ${esc(e.location||"")}</div>`;$("publicEvents").appendChild(div)});
+    if(!ev.size)$("publicEvents").innerHTML='<div class="card">এখনো কোনো public event যোগ করা হয়নি।</div>';
+    $("statEvents").textContent=upcoming;
+  }catch(e){$("publicEvents").innerHTML='<div class="card">Events load হয়নি। Firebase Rules/Index check করুন।</div>'}
+  try{
+    const fs=await getDocs(collection(db,"funds"));let total=0;fs.forEach(d=>{const x=d.data();total+=Number(x.amount||0)});$("statFund").textContent=money(total);$("fundTotal").textContent=money(total);$("fundRowTotal").textContent=money(total);
+    const ex=await getDocs(collection(db,"expenses"));let expense=0;ex.forEach(d=>expense+=Number(d.data().amount||0));$("expenseTotal").textContent=money(expense);$("balanceTotal").textContent=money(total-expense);$("statBalance").textContent=money(total-expense);$("fundTarget").textContent="";$("fundRemain").textContent=money(total-expense)+" balance";$("fundPercent").textContent="—";$("fundProgress").style.width="0";
+  }catch(e){}
+  try{
+    const mem=await getDocs(query(collection(db,"members"),where("status","==","active")));$("statMembers").textContent=mem.size;$("mActive").textContent=mem.size;$("aMembers").textContent=mem.size;
+  }catch(e){}
+  try{
+    const no=await getDocs(query(collection(db,"notices"),where("public","==",true)));$("publicNotices").innerHTML="";no.forEach(d=>{const n=d.data();$("publicNotices").insertAdjacentHTML("beforeend",`<div class="notice"><b>${esc(n.title||"Notice")}</b><small>${esc(n.date||"")} • ${esc(n.message||"")}</small></div>`)});if(!no.size)$("publicNotices").textContent="এখনো কোনো public notice নেই।";
+  }catch(e){$("publicNotices").textContent="Notice load হয়নি।"}
+}
+function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
+
+$("regForm").addEventListener("submit",async e=>{
+ e.preventDefault();const f=new FormData(e.target);$("regStatus").textContent="Submitting...";
+ try{
+  const cred=await createUserWithEmailAndPassword(auth,f.get("email"),f.get("password"));const uid=cred.user.uid;
+  await setDoc(doc(db,"users",uid),{email:f.get("email"),name:f.get("name"),role:"member",createdAt:serverTimestamp()});
+  await addDoc(collection(db,"applications"),{uid,email:f.get("email"),name:f.get("name"),phone:f.get("phone"),occupation:f.get("occupation"),dob:f.get("dob"),address:f.get("address"),reason:f.get("reason"),status:"pending",createdAt:serverTimestamp()});
+  await setDoc(doc(db,"members",uid),{uid,email:f.get("email"),name:f.get("name"),phone:f.get("phone"),status:"pending",createdAt:serverTimestamp()});
+  $("regStatus").textContent="✓ Registration submitted. Admin approval pending.";e.target.reset();toast("Registration সফল হয়েছে");setTimeout(closeReg,1000);
+ }catch(err){$("regStatus").textContent="✕ "+friendly(err)}
+});
+$("loginForm").addEventListener("submit",async e=>{
+ e.preventDefault();
+ const f=new FormData(e.target);
+ const email=String(f.get("email")||"").trim();
+ const password=String(f.get("password")||"");
+ $("loginStatus").textContent="Firebase-এর সাথে সংযোগ করা হচ্ছে...";
+ if(!navigator.onLine){$("loginStatus").textContent="✕ Internet connection নেই।";return}
+ try{
+   const loginPromise=signInWithEmailAndPassword(auth,email,password);
+   const timeout=new Promise((_,reject)=>setTimeout(()=>reject(new Error("LOGIN_TIMEOUT")),12000));
+   await Promise.race([loginPromise,timeout]);
+   closeLogin();
+ }catch(err){
+   if(err.message==="LOGIN_TIMEOUT"){
+     $("loginStatus").innerHTML="✕ Firebase response আসছে না।<br><small>এই HTML-টি local content:// file হিসেবে চলছে। Android WebView/HTML viewer-এর Internet + JavaScript + DOM Storage permission প্রয়োজন হতে পারে।</small>";
+   }else{
+     $("loginStatus").textContent="✕ "+friendly(err);
+   }
+ }
+});
+function friendly(e){
+ const map={
+ "auth/invalid-credential":"Email বা Password ভুল",
+ "auth/invalid-email":"Email format সঠিক নয়",
+ "auth/user-disabled":"এই account disabled",
+ "auth/network-request-failed":"Network request failed — Internet/WebView permission check করুন",
+ "auth/too-many-requests":"অনেকবার চেষ্টা হয়েছে। কিছুক্ষণ পরে আবার চেষ্টা করুন",
+ "auth/operation-not-allowed":"Firebase Authentication-এ Email/Password enabled নেই"
+ };
+ return map[e?.code]||e?.message||"একটি সমস্যা হয়েছে";
+}
+window.addEventListener("online",()=>toast("Internet connected"));
+window.addEventListener("offline",()=>toast("Internet disconnected"));
+
+onAuthStateChanged(auth,async user=>{
+ currentUser=user;
+ if(!user){currentRole=null;return}
+ const snap=await getDoc(doc(db,"users",user.uid));
+ currentRole=snap.exists()?snap.data().role:null;
+ if(currentRole==="super_admin"||currentRole==="admin"||currentRole==="finance_admin"||currentRole==="event_manager"||currentRole==="member_manager"){
+   $("publicSite").style.display="none";$("admin").style.display="block";$("adminIdentity").textContent=user.email+" • "+currentRole;loadAdmin();
+ }
+});
+
+async function loadAdmin(){
+ await loadPublic();await loadApplications();await loadAdminEvents();await loadAdminFunds();await loadAdminExpenses();await loadAdminNotices();await loadAdminMembers();
+}
+async function loadApplications(){
+ const qy=query(collection(db,"applications"),where("status","==","pending"));const s=await getDocs(qy);$("aPending").textContent=s.size;$("applicationsList").innerHTML="";
+ s.forEach(d=>{const a=d.data();$("applicationsList").insertAdjacentHTML("beforeend",`<div class="app"><div class="person"><div class="avatar">${esc((a.name||"?").slice(0,2).toUpperCase())}</div><div><b>${esc(a.name)}</b><div class="muted">${esc(a.phone||"")} • ${esc(a.email||"")}</div></div></div><div class="actionsSmall"><button class="approve" onclick="approveApp('${d.id}','${a.uid}')">✓ Approve</button><button class="reject" onclick="rejectApp('${d.id}')">✕ Reject</button></div></div>`)});
+ if(!s.size)$("applicationsList").innerHTML='<p class="muted">কোনো pending application নেই।</p>';
+}
+window.approveApp=async(id,uid)=>{try{await updateDoc(doc(db,"applications",id),{status:"approved",reviewedAt:serverTimestamp(),reviewedBy:currentUser.uid});await updateDoc(doc(db,"members",uid),{status:"active",approvedAt:serverTimestamp()});toast("Member approved");loadApplications();loadPublic()}catch(e){toast(friendly(e))}}
+window.rejectApp=async id=>{try{await updateDoc(doc(db,"applications",id),{status:"rejected",reviewedAt:serverTimestamp(),reviewedBy:currentUser.uid});toast("Application rejected");loadApplications()}catch(e){toast(friendly(e))}}
+
+$("eventForm").addEventListener("submit",async e=>{e.preventDefault();if(!["super_admin","admin","event_manager"].includes(currentRole))return toast("Event permission নেই");const f=new FormData(e.target);const data={title:f.get("title"),status:f.get("status"),date:f.get("date"),time:f.get("time"),location:f.get("location"),maxParticipants:Number(f.get("max")||0),description:f.get("description"),public:f.get("public")==="on",updatedAt:serverTimestamp()};try{const id=f.get("id");if(id)await updateDoc(doc(db,"events",id),data);else await addDoc(collection(db,"events"),{...data,createdAt:serverTimestamp()});toast("Event saved");resetEvent();loadAdminEvents();loadPublic()}catch(err){toast(friendly(err))}});
+window.resetEvent=()=>{$("eventForm").reset();$("eventForm").id.value="";$("eventForm").public.checked=true};
+async function loadAdminEvents(){const s=await getDocs(collection(db,"events"));$("adminEvents").innerHTML="";s.forEach(d=>{const e=d.data();$("adminEvents").insertAdjacentHTML("beforeend",`<div class="app"><div><b>${esc(e.title)}</b><div class="muted">${esc(e.date||"")} • ${esc(e.status||"")}</div></div><div class="actionsSmall"><button class="approve" onclick="editEvent('${d.id}')">Edit</button><button class="reject" onclick="deleteEvent('${d.id}')">Delete</button></div></div>`)})}
+window.editEvent=async id=>{const d=await getDoc(doc(db,"events",id));const e=d.data();for(const k of ["id","title","status","date","time","location","description"]){if($( "eventForm").elements[k])$( "eventForm").elements[k].value=k==="id"?id:(e[k]||"")}$( "eventForm").elements.max.value=e.maxParticipants||0;$("eventForm").public.checked=e.public===true;scrollAdmin("eventPanel")};
+window.deleteEvent=async id=>{if(!confirm("Event delete করবেন?"))return;await deleteDoc(doc(db,"events",id));toast("Event deleted");loadAdminEvents();loadPublic()};
+
+$("fundForm").addEventListener("submit",async e=>{e.preventDefault();if(!["super_admin","admin","finance_admin"].includes(currentRole))return toast("Fund permission নেই");const f=new FormData(e.target);await addDoc(collection(db,"funds"),{amount:Number(f.get("amount")),source:f.get("source"),date:f.get("date"),public:f.get("public")==="true",createdAt:serverTimestamp(),createdBy:currentUser.uid});e.target.reset();toast("Fund added");loadAdminFunds();loadPublic()});
+async function loadAdminFunds(){const s=await getDocs(collection(db,"funds"));$("fundList").innerHTML="";s.forEach(d=>{const x=d.data();$("fundList").insertAdjacentHTML("beforeend",`<div class="row" style="color:#eee5d8;border-color:#ffffff10"><span>${esc(x.source||"Fund")} • ${esc(x.date||"")}</span><b>${money(x.amount)}</b></div>`)})}
+
+$("expenseForm").addEventListener("submit",async e=>{e.preventDefault();if(!["super_admin","admin","finance_admin"].includes(currentRole))return toast("Expense permission নেই");const f=new FormData(e.target);await addDoc(collection(db,"expenses"),{amount:Number(f.get("amount")),category:f.get("category"),description:f.get("description"),createdAt:serverTimestamp(),createdBy:currentUser.uid});e.target.reset();toast("Expense added");loadAdminExpenses();loadPublic()});
+async function loadAdminExpenses(){const s=await getDocs(collection(db,"expenses"));$("expenseList").innerHTML="";s.forEach(d=>{const x=d.data();$("expenseList").insertAdjacentHTML("beforeend",`<div class="row" style="color:#eee5d8;border-color:#ffffff10"><span>${esc(x.category||"Expense")} • ${esc(x.description||"")}</span><b>${money(x.amount)}</b></div>`)})}
+
+$("noticeForm").addEventListener("submit",async e=>{e.preventDefault();if(!["super_admin","admin"].includes(currentRole))return toast("Notice permission নেই");const f=new FormData(e.target);await addDoc(collection(db,"notices"),{title:f.get("title"),message:f.get("message"),date:f.get("date"),public:true,createdAt:serverTimestamp(),createdBy:currentUser.uid});e.target.reset();toast("Notice published");loadAdminNotices();loadPublic()});
+async function loadAdminNotices(){const s=await getDocs(collection(db,"notices"));$("noticeList").innerHTML="";s.forEach(d=>{const x=d.data();$("noticeList").insertAdjacentHTML("beforeend",`<div class="row" style="color:#eee5d8;border-color:#ffffff10"><span>${esc(x.title)}</span><span>${esc(x.date||"")}</span></div>`)})}
+
+async function loadAdminMembers(){const s=await getDocs(collection(db,"members"));$("membersList").innerHTML="";s.forEach(d=>{const m=d.data();$("membersList").insertAdjacentHTML("beforeend",`<div class="row" style="color:#eee5d8;border-color:#ffffff10"><span><b>${esc(m.name||"")}</b><br><small class="muted">${esc(m.email||"")} • ${esc(m.phone||"")}</small></span><b>${esc(m.status||"")}</b></div>`)})}
+
+window.logout=()=>signOut(auth).then(()=>{location.reload()});
+window.openAdvanced=async()=>{
+ if(currentRole!=="super_admin")return toast("শুধু SUPER_ADMIN-এর জন্য");
+ const pass=prompt("Firebase account password দিন:");
+ if(pass===null)return;
+ try{await reauthenticateWithCredential(currentUser,EmailAuthProvider.credential(currentUser.email,pass));$("admin").style.display="none";$("advanced").style.display="block"}catch(e){toast("Advanced verification failed")}
+};
+window.closeAdvanced=()=>{$("advanced").style.display="none";$("admin").style.display="block"};
+checkFirebaseConnection();
+loadPublic();
+</script>
+</body>
+</html>
